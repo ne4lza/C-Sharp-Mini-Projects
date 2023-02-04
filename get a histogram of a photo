@@ -1,0 +1,17 @@
+ Bitmap photo = new Bitmap(Your Photo Location);
+            int[] r = new int[256];
+            int[] b = new int[256];
+            int[] g = new int[256];
+            for (int i = 0; i < 256; i++)
+            {
+                r[i] = b[i] = g[i] = 0;
+            }
+            for (int x = 0; x < photo.Width; x++)
+            {
+                for (int y = 0; y < photo.Height; y++)
+                {
+                    r[photo.GetPixel(x, y).R]++;
+                    g[photo.GetPixel(x, y).G]++;
+                    b[photo.GetPixel(x, y).B]++;
+                }
+            }
