@@ -1,2 +1,2 @@
-# C-Sharp-Mini-Projects
-C# Language mini projects
+# get a histogram of a photo in c sharp
+
